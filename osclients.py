@@ -1,8 +1,6 @@
 import logging
 import os
 
-from midonetclient import api
-
 import glanceclient.v2.client as glclient
 import keystoneclient.v2_0.client as ksclient
 from neutronclient.v2_0 import client as neutronclient
@@ -52,13 +50,3 @@ def get_glance_client():
         service_type='image',
         endpoint_type='internal')
     return glclient.Client(glance_endpoint, token=keystone.auth_token)
-
-
-def get_midonet_client():
-    d = {}
-    d['base_uri'] = os.environ['OS_MIDONET_URL']
-    d['username'] = os.environ['OS_USERNAME']
-    d['password'] = os.environ['OS_PASSWORD']
-    d['project_id'] = os.environ['OS_TENANT_NAME']
-    midonet_client = api.MidonetApi(**d)
-    return midonet_client
