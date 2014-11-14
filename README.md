@@ -41,10 +41,3 @@ networks = nc.list_networks()
 # Development
 
 Want to contribute? Great! Feel free to fork or add comments / PR !
-
-[ipython]:
-    http:
-        //ipython.org/
-[OpenStack]:
-    http:
-        //openstack.org/
