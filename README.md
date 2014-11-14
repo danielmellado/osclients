@@ -1,10 +1,10 @@
 OSClients
 =========
 
-Collection of [OpenStack] client helpers
+Collection of [OpenStack](openstack.org) client helpers
 
 In order to help and ease the process of using OpenStack credentials and clients
-with [ipython] or any python interpreter, this library allows you to call them
+with [ipython](ipython.org) or any python interpreter, this library allows you to call them
 directly using the environment variables from keystonerc files.
 
 # Usage
